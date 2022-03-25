@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\nicke\OneDrive\Skrivbord\Visual Studio Projekt\EmployeeMVC\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2022-03-25T07:39:03.0349363Z;True|2022-03-25T08:18:34.7643664+01:00;True|2022-03-25T08:11:10.6992723+01:00;True|2022-03-25T08:03:25.9471175+01:00;True|2022-03-25T07:58:40.9586407+01:00;True|2022-03-25T06:25:08.8384956+01:00;True|2022-03-23T16:39:23.8431244+01:00;True|2022-03-23T16:38:30.2574672+01:00;True|2022-03-23T16:26:29.7946880+01:00;True|2022-03-18T11:39:47.3887586+01:00;True|2022-03-14T10:32:20.2539543+01:00;True|2022-03-14T09:46:19.7588074+01:00;True|2022-03-14T09:45:55.0948433+01:00;True|2022-03-14T09:44:02.8209737+01:00;True|2022-03-09T14:15:19.9729029+01:00;</History>
+  </PropertyGroup>
+</Project>

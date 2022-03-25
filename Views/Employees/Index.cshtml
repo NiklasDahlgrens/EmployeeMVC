@@ -1,0 +1,59 @@
+﻿@model IEnumerable<EmployeeMVC.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Personallista</h1>
+
+<p>
+    <a href="/EmployeeMVC/CreateAccount/Create">Lägg till nytt personalkonto</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <h6>Förnamn</h6>
+            </th>
+            <th>
+                <h6>Efternamn</h6>
+            </th>
+            <th>
+                <h6>Personnummer</h6>
+            </th>
+            <th>
+                <h6>Telefonnummer</h6>
+            </th>
+            <th>
+                <h6>Roll</h6>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelephoneNr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Ändra</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detaljer</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Radera</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

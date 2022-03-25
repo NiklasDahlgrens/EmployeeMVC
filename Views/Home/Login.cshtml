@@ -1,0 +1,78 @@
+﻿@model EmployeeMVC.Models.LoginDetails
+@{
+    ViewBag.Title = "LoginForm";
+}
+
+
+
+@Html.BeginForm("GetUser", "Authenticate"))
+{
+<table width="40%" cellpadding="1" cellspacing="5">
+    <tr>
+        <td align="right">User Name :</td>
+        <td>@Html.TextBoxFor(m => m.Username)</td>
+    </tr>
+    <tr>
+        <td align="right">User Password :</td>
+        <td>@Html.PasswordFor(m => m.Password)</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" value="Login" title="login" onclick=" display();" />
+        </td>
+    </tr>
+</table>
+                }
+}
+
+
+
+
+
+
+
+@*<script language="javascript">
+        function display() {
+            if ($("#txtusername").attr("value") == "") {
+                alert("Please Enter your UserName.");
+                return false;
+            } else if ($("#txtuserpassword").attr("value") == "") {
+                alert("Please enter UserPassword.");
+                return false;
+            }
+            alert("Login Successfully");
+            return true;
+        }
+    </script>
+    <h3>Simple We API Login Form </h3>
+
+    <body>
+        <form id="form1" runat="http://193.10.202.75/LoginAPI/Authenticate">
+            <div>
+
+                @using (Html.BeginForm("GetUser", "Authenticate"))
+                {
+                    <table width="40%" cellpadding="1" cellspacing="5">
+                        <tr>
+                            <td colspan="2" style="color:#f00;font-size:larger">@ViewBag.Status</td>
+                        </tr>
+                        <tr>
+                            <td align="right">User Name :</td>
+                            <td>@Html.TextBoxFor(m => m.Username, new { @style = "width:200px", @id = "txtusername" })</td>
+                        </tr>
+                        <tr>
+                            <td align="right">User Password :</td>
+                            <td>@Html.PasswordFor(m => m.Password, new { @style = "width:200px", @id = "txtuserpassword" })</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Login" title="login" onclick=" display();" />
+                            </td>
+                        </tr>
+                    </table>
+                }
+
+            </div>
+        </form>
+    </body>*@
+
